@@ -231,7 +231,7 @@ def gradient_updates(cost,params,lr,momentum,gains,iY,classifier):
     #updates.append((classifier.Y, classifier.Y + iY))
     return updates
 
-def tsne(dataset='mnist_test',no_dims = 2, initial_dims = 50, perplexity = 20.0):
+def tsne(dataset='mnist',no_dims = 2, initial_dims = 50, perplexity = 20.0):
     """
     :type dataset: strin, classifierg
     :param dataset: 
