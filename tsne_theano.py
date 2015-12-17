@@ -158,7 +158,7 @@ def load_data(dataset):
         #labels = numpy.loadtxt("../data/mnist2500_labels.txt")
 
 
-        datafile = gzip.open('../data/mnist.pkl.gz','rb')
+        datafile = gzip.open('./data/mnist.pkl.gz','rb')
         train_set,valid_set,test_set = cPickle.load(datafile)
     
         if 'train' in dataset:
@@ -188,7 +188,7 @@ def load_data(dataset):
     #return X,labels
     elif 'yale' in dataset:
         print 'Loading Yale Face...'
-        faces = cPickle.load(open('../data/yalefaces.pkl'))
+        faces = cPickle.load(open('./data/yalefaces.pkl'))
         print str(faces.shape)
         print numpy.max(faces),numpy.min(faces)
 
